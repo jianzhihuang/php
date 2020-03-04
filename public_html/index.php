@@ -25,7 +25,7 @@
     echo "<br/><br/>";
     echo $thirdArray["美國"];
     print_r($thirdArray);
-
+    echo "<br/><br/>";
     $anotherArray[] = "沙拉";
     print_r($anotherArray);
     echo "<br/><br/>";
