@@ -1,16 +1,29 @@
 <?php
       $myArray = array("貓","狗","魚");
 
+      $i = 0;
 
-      $i = 0 ; 
-      
-      while ($i <= 10){
+      while ($myArray[$i]){
 
-        echo $i."<br/>";
+        echo $myArray[$i]."<br/>";
+
         $i++;
 
 
       }
+
+
+
+
+      // $i = 0 ; 
+      
+      // while ($i <= 10){
+
+      //   echo $i."<br/>";
+      //   $i++;
+
+
+      // }
 
 
 
