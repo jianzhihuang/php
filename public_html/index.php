@@ -1,25 +1,12 @@
 <?php
-    $number = 2;
+
+    for ($i = 1; $i < 10; $i++)
+    {
+      echo $i."<br/>";
 
 
 
-    $anotherNumber =1;
-
-    $thridNumber = 1;
-
-    if ($number != $anotherNumber or $anotherNumber != $thridNumber ) {
-
-      echo "True!";
-
-
-
-    } else{
-
-      echo "False!";
-
-
-    }
-
+    };
 
 
 
