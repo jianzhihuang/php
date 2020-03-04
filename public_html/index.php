@@ -11,5 +11,16 @@
     $anotherArray[1] = "牛奶";
 
     print_r($anotherArray);
+    echo "<br/><br/>";
+    $thirdArray = array(
+
+      "法國" => "法語",
+      "美國" => "英語",
+      "日本" => "日語",
+
+
+
+    );
+    print_r($thirdArray);
 
 ?>
