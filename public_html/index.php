@@ -31,6 +31,7 @@
     echo "<br/><br/>";
 
     unset($thirdArray["美國"]);
+    print_r($thirdArray);
 
 
 
