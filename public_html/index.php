@@ -5,7 +5,9 @@
 
     $anotherNumber =1;
 
-    if ($number != $anotherNumber ) {
+    $thridNumber = 1;
+
+    if ($number != $anotherNumber and $anotherNumber != $thridNumber ) {
 
       echo "True!";
 
