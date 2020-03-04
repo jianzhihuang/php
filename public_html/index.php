@@ -1,6 +1,6 @@
 <?php
     $number = 2;
-    if ($number == 1 ) {
+    if ($number == 2 ) {
 
       echo "True!";
 
