@@ -7,7 +7,7 @@
         
         echo "$myArray[$i]<br/>";
 
-        echo "位置: $i , 值為:$myArray <br/>";
+        // echo "位置: $i , 值為:$myArray <br/>";
 
         $i++;
 
