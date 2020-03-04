@@ -32,6 +32,11 @@
 
     unset($thirdArray["美國"]);
     print_r($thirdArray);
+    echo "<br/><br/>";
+    $name = "Ken";
+    unset($name);
+    echo $name;
+    
 
 
 
