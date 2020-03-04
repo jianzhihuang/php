@@ -30,6 +30,9 @@
     print_r($anotherArray);
     echo "<br/><br/>";
 
+    unset($thirdArray["美國"]);
+
+
 
 
 
