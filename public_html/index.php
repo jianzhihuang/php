@@ -5,7 +5,7 @@
 
       while ($myArray[$i]){
 
-        echo "位置: $i , 值為:$myArray[$i] <br/>";
+        echo "位置: $i , 值為:$myArray <br/>";
 
         $i++;
 
