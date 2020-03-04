@@ -22,6 +22,7 @@
 
     );
     print_r($thirdArray);
+    echo "<br/><br/>";
     echo $thirdArray["美國"];
 
 ?>
