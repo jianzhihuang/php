@@ -5,7 +5,7 @@
 
     $anotherNumber =1;
 
-    if ($number == $anotherNumber ) {
+    if ($number != $anotherNumber ) {
 
       echo "True!";
 
