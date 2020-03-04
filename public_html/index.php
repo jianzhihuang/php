@@ -4,7 +4,7 @@
 
       foreach ($myArray as $key => $value){
 
-        echo "位置: $key, 值為: $value <br/>";
+        echo " <br/>";
 
       }
     // for ($i = 10; $i > 0; $i=$i-1)
