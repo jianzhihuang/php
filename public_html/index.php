@@ -1,6 +1,11 @@
 <?php
     $number = 2;
-    if ($number == 1 ) {
+
+
+
+    $anotherNumber =1;
+
+    if ($number == $anotherNumber ) {
 
       echo "True!";
 
