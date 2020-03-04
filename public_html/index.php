@@ -3,5 +3,6 @@
     print_r($myArray);
     echo "<br/><br/>";
     echo $myArray[5];
+    echo "繼續運行"
 
 ?>
