@@ -1,5 +1,5 @@
 <?php
-  $emailTo = "p0921442701@gmail.com";
+  $emailTo = "";
   $title = "Test Email";
   $body = "That is test email content.";
   $headers = "Form : myEmail@address.com";
