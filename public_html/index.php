@@ -1,20 +1,23 @@
-<?php
-  $emailTo = "p0921442701@gmail.com";
-  $title = "Test Email";
-  $body = "That is test email content.";
-  $headers = "Form : myEmail@address.com";
-
-  if (mail($emailTo,$title,$body,$headers))  {
-
-    echo "發送成功";
-
-  }else{
-
-    echo "發送失敗";
-
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muy Form</title>
 
 
 
 
-?>
+</head>
+<body>
+        <form>
+        
+          <label for = "name">姓名</label>
+          <input type="text" name="name">
+
+          <input type="submit" name="submit"/>
+        
+        </form>
+  
+</body>
+</html>
