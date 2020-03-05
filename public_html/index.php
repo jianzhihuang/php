@@ -4,7 +4,8 @@
   $body = "That is test email content.";
   $headers = "Form : myEmail@address.com";
 
-  mail($emailTo,$title,$body,$headers);
+  echo mail($emailTo,$title,$body,$headers);
+
 
 
 
