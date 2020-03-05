@@ -27,7 +27,7 @@
           }
         
         ?>
-        <form>
+        <form method="POST">
         
           <label for = "name">姓名</label>
           <input type="text" name="name">
