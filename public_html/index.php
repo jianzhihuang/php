@@ -34,7 +34,7 @@
 
             }
 
-            if (!$knowYou) {
+            if ($knowYou==0) {
 
               echo "抱歉 , 我不認識你";
 
