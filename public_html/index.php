@@ -13,11 +13,11 @@
 
         <?php
         
-          if ($_GET["name"]){
+          if ($_POST["name"]){
 
 
 
-            echo "你的姓名是 ".$_GET["name"];
+            echo "你的姓名是 ".$_POST["name"];
 
           }else{
 
