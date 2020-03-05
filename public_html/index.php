@@ -10,6 +10,13 @@
 
 </head>
 <body>
+
+        <?php
+        
+          print_r($_GET);
+        
+        
+        ?>
         <form>
         
           <label for = "name">姓名</label>
