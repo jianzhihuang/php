@@ -1,43 +1,10 @@
 <?php
-      $myArray = array("貓","狗","魚");
+  $emailTo = "p0921442701@gmail.com";
+  $title = "Test Email";
+  $body = "That is test email content.";
+  $headers = "Form : myEmail@address.com";
 
-      $i = 0;
-
-      while ($myArray[$i]){
-        
-        echo "$myArray[$i]<br/>";
-
-        // echo "位置: $i , 值為:$myArray <br/>";
-
-        $i++;
-
-
-      }
-
-
-
-
-      // $i = 0 ; 
-      
-      // while ($i <= 10){
-
-      //   echo $i."<br/>";
-      //   $i++;
-
-
-      // }
-
-
-
-    // for ($i = 10; $i > 0; $i=$i-1)
-    // {
-    //   echo $i."<br/>";
-
-
-
-    // };
-
-
+  mail($emailTo,$title,$body,$headers);
 
 
 
