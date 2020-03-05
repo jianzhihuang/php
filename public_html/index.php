@@ -13,7 +13,13 @@
 
         <?php
         
-          print_r($_GET["name"]);
+          if ($_GET["name"]){
+
+
+
+            echo "你的姓名是 ".$_GET["name"];
+
+          }
         
         
         ?>
