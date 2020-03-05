@@ -4,7 +4,7 @@
   $body = "That is test email content.";
   $headers = "Form : myEmail@address.com";
 
-  if(mail($emailTo,$title,$body,$headers))  {
+  if (mail($emailTo,$title,$body,$headers))  {
 
     echo "發送成功";
 
