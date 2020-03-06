@@ -110,16 +110,16 @@
             var message = $("#mail-message").val();
             var submit = $("#submitButton").val();
 
-            // $("#error").load("mail.php",{
+            $("#error").load("mail.php",{
 
-            //     name : name,
-            //     email : email,
-            //     pass1 : pass1,
-            //     pass2 : pass2,
-            //     meassage : meassage,
-            //     submit : submit ,
+                name : name,
+                email : email,
+                pass1 : pass1,
+                pass2 : pass2,
+                meassage : meassage,
+                submit : submit ,
 
-            // });
+            });
 
         });
     </script>
