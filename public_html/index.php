@@ -66,7 +66,7 @@
 
     <div id="container"></div>
 
-    <form id="validationForm" method="$_POST">
+    <form id="validationForm" action="mail.php" method="$_POST">
 
         <label for="email-name">姓 名</label>
         <input id="email-name" class="input-style input-width" type="text" name="name" placeholder="請輸入你的姓名">
@@ -110,16 +110,16 @@
             var meassage = $("#mail-message").val();
             var submit = $("#submitButton").val();
 
-            $("#error").load("mail.php",{
+            // $("#error").load("mail.php",{
 
-                name : name,
-                email : email,
-                pass1 : pass1,
-                pass2 : pass2,
-                meassage : meassage,
-                submit : submit ,
+            //     name : name,
+            //     email : email,
+            //     pass1 : pass1,
+            //     pass2 : pass2,
+            //     meassage : meassage,
+            //     submit : submit ,
 
-            });
+            // });
 
         });
     </script>
