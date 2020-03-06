@@ -1,61 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Form</title>
+    <title>網站聯繫表單</title>
 
-
-
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            background-color: #F2F3F5;
+        }
+        
+        #container {
+            padding-top: 60px;
+            width: 600px;
+            margin: auto;
+            font-family: "Helvetica Neue", "Helvetica", "Arial";
+        }
+        
+        .input-style {
+            border-radius: 5px;
+            border: 1px solid grey;
+            font-size: 1.1em;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .input-width {
+            width: 300px;
+            height: 40px;
+        }
+        
+        #mail-gender {
+            width: 323px;
+            height: 40px;
+        }
+        
+        label {
+            width: 200px;
+            float: left;
+            font-size: 1.2em;
+            padding-top: 8px;
+        }
+        
+        #mail-message {
+            width: 500px;
+            padding-top: 15px;
+        }
+        
+        #submitButton {
+            background-color: #AA47BC;
+            color: white;
+            width: 523px;
+            height: 40px;
+        }
+        
+        #error {
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
 
-        <?php
+    <div id="container"></div>
+
+    <form id="validationForm">
+
+        <label for="email-name">姓 名</label>
+        <input id="email-name" class="input-style input-width" type="text" name="name" placeholder="請輸入你的姓名">
+
+        <label for="email-address">電子郵箱</label>
+        <input id="email-address" class="input-style input-width" type="text" name="email" placeholder="請輸入你的郵箱">
+
+        <label for="mail-gender">性 別</label>
+        <select name="gender" id="mail-gender" class="input-style">
+        <option value="male">男 性</option>
+        <option value="female">女 性</option>
+    </select>
 
 
-          $name = array("Ken","Josh","Tom");
-          $knowYou = 0 ;
-        
-          if ($_POST["name"]){
+        <label for="pass1">密碼</label>
+        <input id="pass1" class="input-style input-width" type="password" name="pass1" placeholder="密 碼">
+
+        <label for="pass2">確認密碼</label>
+        <input id="pass2" type="password" class="input-style input-width" name="pass2" placeholder="確認密碼">
+
+        <textarea name="meassage" id="mail-message" class="input-style" cols="30" rows="10" placeholder="請描述你的狀況"></textarea>
+
+        <button id="submitButton" class="input-style" type="submit" name="submit">發送郵件</button>
 
 
+    </form>
 
-            // echo "你的姓名是 ".$_POST["name"];
-            foreach($name as $name){
+    <div id="error"></div>
 
-              if($_POST["name"] == $name){
+    <script type="text/javascript">
+        $("#validationForm").submit(function(event) {
+
+            var errorMessage = "";
 
 
-                  echo "我認識你 , 你是".$_POST["name"];
-                  $knowYou = 1;
+            event.preventDefault();
+            var name = $("#email-name").val();
+            var email = $("#email-address").val();
+            var pass1 = $("#pass1").val();
+            var pass2 = $("#pass2").val();
+            var meassage = $("#mail-message").val();
 
-              }
+            function isValidEmailAddress(emailAddress) {
+
+                var patten = /^\b[A-Z0-9-]+@[A-Z0-9]+\.com\b/i;
+
+                return patten.test(emailAddress);
 
             }
 
-            if ($knowYou==0) {
+            if (name == "" ||
+                email == "" || pass1 == "" || pass2 == "" || meassage == "") {
+                errorMessage = ("請輸入完整信息");
 
-              echo "抱歉 , 我不認識你";
+            } else if (!isValidEmailAddress(email)) {
+
+                errorMessage = ("請輸入正確格式的郵箱地址");
+
+            } else if (pass1 != pass2) {
+
+
+                errorMessage = ("請確認你輸入的密碼");
+            }
+            if (errorMessage == "") {
+
+                $("#error").html("郵件已經發送!");
+                $("#error").css("color", "green");
+
+            } else {
+
+                $("#error").html(errorMessage);
+                $("#error").css("color", "red");
+
 
             }
+        });
+    </script>
 
-          }else{
 
-
-              echo "請輸入你的姓名";
-
-          }
-        
-        ?>
-        <form method="POST">
-        
-          <label for = "name">姓名</label>
-          <input type="text" name="name">
-
-          <input type="submit" name="submit"/>
-        
-        </form>
-  
 </body>
+
 </html>
