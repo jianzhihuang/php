@@ -99,7 +99,7 @@
     <script type="text/javascript">
         $("#validationForm").submit(function(event) {
 
-            var errorMessage = "";
+            
 
 
             event.preventDefault();
@@ -108,40 +108,19 @@
             var pass1 = $("#pass1").val();
             var pass2 = $("#pass2").val();
             var meassage = $("#mail-message").val();
+            var submit = $("#submitButton").val();
 
-            function isValidEmailAddress(emailAddress) {
+            $("#error").load("mail.php",{
 
-                var patten = /^\b[A-Z0-9-]+@[A-Z0-9]+\.com\b/i;
+                name : name,
+                email : email,
+                pass1 : pass1,
+                pass2 : pass2,
+                meassage : meassage,
+                submit : submit ,
 
-                return patten.test(emailAddress);
+            });
 
-            }
-
-            if (name == "" ||
-                email == "" || pass1 == "" || pass2 == "" || meassage == "") {
-                errorMessage = ("請輸入完整信息");
-
-            } else if (!isValidEmailAddress(email)) {
-
-                errorMessage = ("請輸入正確格式的郵箱地址");
-
-            } else if (pass1 != pass2) {
-
-
-                errorMessage = ("請確認你輸入的密碼");
-            }
-            if (errorMessage == "") {
-
-                $("#error").html("郵件已經發送!");
-                $("#error").css("color", "green");
-
-            } else {
-
-                $("#error").html(errorMessage);
-                $("#error").css("color", "red");
-
-
-            }
         });
     </script>
 
