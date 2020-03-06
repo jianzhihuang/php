@@ -102,7 +102,7 @@
             
 
 
-            event.preventDefault();
+            // event.preventDefault();
             var name = $("#email-name").val();
             var email = $("#email-address").val();
             var pass1 = $("#pass1").val();
