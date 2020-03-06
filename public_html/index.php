@@ -87,7 +87,7 @@
         <label for="pass2">確認密碼</label>
         <input id="pass2" type="password" class="input-style input-width" name="pass2" placeholder="確認密碼">
 
-        <textarea name="meassage" id="mail-message" class="input-style" cols="30" rows="10" placeholder="請描述你的狀況"></textarea>
+        <textarea name="message" id="mail-message" class="input-style" cols="30" rows="10" placeholder="請描述你的狀況"></textarea>
 
         <button id="submitButton" class="input-style" type="submit" name="submit">發送郵件</button>
 
