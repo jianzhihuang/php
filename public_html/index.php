@@ -66,7 +66,7 @@
 
     <div id="container"></div>
 
-    <form id="validationForm" action="mail.php" method="post">
+    <form id="validationForm" method="post">
 
         <label for="email-name">姓 名</label>
         <input id="email-name" class="input-style input-width" type="text" name="name" placeholder="請輸入你的姓名">
@@ -102,7 +102,7 @@
             
 
 
-            // event.preventDefault();
+            event.preventDefault();
             var name = $("#email-name").val();
             var email = $("#email-address").val();
             var pass1 = $("#pass1").val();
