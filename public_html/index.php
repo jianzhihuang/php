@@ -66,7 +66,7 @@
 
     <div id="container"></div>
 
-    <form id="validationForm">
+    <form id="validationForm" method="$_POST">
 
         <label for="email-name">姓 名</label>
         <input id="email-name" class="input-style input-width" type="text" name="name" placeholder="請輸入你的姓名">
