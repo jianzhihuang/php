@@ -116,7 +116,7 @@
                 email : email,
                 pass1 : pass1,
                 pass2 : pass2,
-                meassage : meassage,
+                message : message,
                 submit : submit ,
 
             });
