@@ -107,7 +107,7 @@
             var email = $("#email-address").val();
             var pass1 = $("#pass1").val();
             var pass2 = $("#pass2").val();
-            var meassage = $("#mail-message").val();
+            var message = $("#mail-message").val();
             var submit = $("#submitButton").val();
 
             // $("#error").load("mail.php",{
