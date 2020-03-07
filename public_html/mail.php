@@ -12,7 +12,23 @@
     
     if(empty($name)||empty($email)||empty($pass1)||empty($pass2)||empty($messagel)){
 
-        echo "<span class='form-error'>請輸入完整信息</span>";
+        echo "<span class='form-error'>請輸入完整信息.</span>";
+
+
+    }elseif(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+
+        echo "<span class='form-error'>請輸入正確格式的郵箱地址.</span>";
+
+
+
+    }elseif($pass1!=$pass2){
+
+        echo "<span class='form-error'>請確認你輸入相同的密碼.</span>";
+
+
+    }else{
+
+        
 
 
     }
