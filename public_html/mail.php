@@ -32,7 +32,27 @@
 
     }else{
 
-        
+        $mailToname =  "p0921442701";
+        $mailTo = "p0921442701@gmail.com";
+        $mailFromname = $name;
+        $mailFrom = $email;
+        $mailSubject = "網站聯繫表單";
+        $mailContent = "姓名:".$name."信息內容:
+        ".$message;
+
+        if (mail($mailTo,$mailSubject,$mailContent,$mailFrom)){
+
+
+            echo "<span class='form-success'>郵件已經發送成功.</span>";
+            
+
+
+
+        }else{
+
+            echo "<span class='form-success'>郵件發送失敗.</span>";
+
+        }
 
 
     }
