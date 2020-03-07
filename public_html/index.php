@@ -31,7 +31,6 @@
             width: 300px;
             height: 40px;
         }
-        
         #mail-gender {
             width: 323px;
             height: 40px;
