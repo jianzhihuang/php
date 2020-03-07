@@ -37,7 +37,8 @@
         $mailFromname = $name;
         $mailFrom = $email;
         $mailSubject = "網站聯繫表單";
-        $mailContent = "姓名:".$name."信息內容:
+        $mailContent = "姓名:".$name."
+        信息內容:
         ".$message;
 
         if (mail($mailTo,$mailSubject,$mailContent,$mailFrom)){
