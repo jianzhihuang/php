@@ -48,6 +48,8 @@
 
 <script>
 
+$("#email-name, #email-address ,#pass1,#pass2,#mail-message").removeClass("input-error");
+
 var errorEmpty = "<?php echo $errorEmpty; ?>";
 var errorEmail = "<?php echo $errorEmail; ?>";
 var errorPass = "<?php echo $errorPass; ?>";
