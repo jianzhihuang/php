@@ -10,12 +10,13 @@
         
     
     
-    if(empty($name)||empty($email)||empty($pass1)||empty($pass2)||empty($messagel)){
+    // if(empty($name)||empty($email)||empty($pass1)||empty($pass2)||empty($messagel)){
 
-        echo "<span class='form-error'>請輸入完整信息.</span>";
+    //     echo "<span class='form-error'>請輸入完整信息.</span>";
 
 
-    }elseif(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+    // } 
+    if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
 
         echo "<span class='form-error'>請輸入正確格式的郵箱地址.</span>";
 
