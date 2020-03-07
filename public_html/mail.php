@@ -10,7 +10,7 @@
         
     
     
-    if(empty($name)||empty($email)||empty($pass1)||empty($pass2)||empty($messagel)){
+    if(empty($name)||empty($email)||empty($pass1)||empty($pass2)||empty($message)){
 
         echo "<span class='form-error'>請輸入完整信息.</span>";
 
