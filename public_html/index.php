@@ -56,8 +56,11 @@
             height: 40px;
         }
         
-        #error {
+        .form-error {
             color: red;
+        }
+        .form-success {
+            color: green;
         }
     </style>
 </head>
