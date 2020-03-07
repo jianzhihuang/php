@@ -54,7 +54,19 @@ var errorPass = "<?php echo $errorPass; ?>";
 
 if (errorEmpty ==  true){
 
-    $("#email-name, #email-address").addClass("input-error");
+    $("#email-name, #email-address ,#pass1,#pass2,#mail-message").addClass("input-error");
+    
+
+}
+if (errorEmail ==  true){
+
+$("#email-address").addClass("input-error");
+
+
+}
+if (errorPass ==  true){
+
+$("#pass1,#pass2").addClass("input-error");
 
 
 }
