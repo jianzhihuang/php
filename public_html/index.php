@@ -62,6 +62,13 @@
         .form-success {
             color: green;
         }
+
+        .input-error{
+
+            box-shadow: 0 0 5px red;
+
+
+        }
     </style>
 </head>
 
