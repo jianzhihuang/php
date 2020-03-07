@@ -44,26 +44,19 @@
 
 
 }
+?>
 
 <script>
 
-    var errorEmpty = "<?php echo $errorEmpty; ?>";
-    var errorEmail = "<?php echo $errorEmail; ?>";
-    var errorPass = "<?php echo $errorPass; ?>";
+var errorEmpty = "<?php echo $errorEmpty; ?>";
+var errorEmail = "<?php echo $errorEmail; ?>";
+var errorPass = "<?php echo $errorPass; ?>";
 
-    if (errorEmpty ==  true){
+if (errorEmpty ==  true){
 
-        $("#email-name, #email-address , #pass1,#pass2,#mail-message").addClass("inpur-error");
+    $("#email-name, #email-address , #pass1,#pass2,#mail-message").addClass("inpur-error");
 
 
-    }
+}
 
 </script>
-
-
-
-
-
-
-
-?>
