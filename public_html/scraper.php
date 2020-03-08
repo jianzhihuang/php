@@ -8,7 +8,7 @@
 
     preg_match("/<br><br><p>(.*?)<\/p>/i",$contents, $matches);
 
-    echo $matches[1];
+    echo $matches[0];
 
 
 
