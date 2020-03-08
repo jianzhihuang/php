@@ -10,6 +10,6 @@
 
     preg_match("/\"forecast-comment\">(.*?)<\/div>/i",$contents,$matches);
 
-    
-    echo $matches[0];
+    print_r($matches);
+    // echo $matches[0];
 ?>
