@@ -11,5 +11,5 @@
     preg_match("/\"forecast-comment\">(.*?)<\/div>/i",$contents,$matches);
 
     
-    echo $matches[1];
+    echo $matches[0];
 ?>
