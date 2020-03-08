@@ -1,6 +1,6 @@
 <?php
 
-    $city = $contents ;
+    // $city = $contents ;
     // $_GET["city"];
     // $city = str_replace(" ", "-", $city);
     
@@ -12,4 +12,6 @@
 
     
     echo $matches[1];
+
+    $city = $contents ;
 ?>
