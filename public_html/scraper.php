@@ -1,9 +1,12 @@
 <?php
 
+    $city = $_GET["city"];
 
-    $contents = @file_get_contents("https://tenki.jp/");
+    $city = str_replace(" ","-",$city);
+    
+    $contents = @file_get_contents("https://zh.weather-forecast.com/locations/".$city."/forecasts/latest");
 
-    preg_match("/\"forecast-comment\">(.*?)<\/div>/i",$contents, $matches);
+    preg_match("/\"phrase\">(.*?)<\/span>/i",$contents, $matches);
 
     echo $matches[1];
 
