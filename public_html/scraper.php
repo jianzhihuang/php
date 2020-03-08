@@ -8,7 +8,7 @@
 
 
 
-    preg_match("/\"forecast-comment\">(.*?)<\/div>/i",$contents,$matches);
+    preg_match("/\"forecast-comment\">(.*?)<br>/i",$contents,$matches);
 
     print_r($matches);
     // echo $matches[0];
