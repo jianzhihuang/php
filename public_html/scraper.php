@@ -4,7 +4,7 @@
 
     $city = str_replace(" ","-",$city);
     
-    $contents = @file_get_contents("https://www.myweather2.com/City-Town/United-Kingdom/City-of-Westminster/London/14-Day-Forecast.aspx");
+    echo @file_get_contents("https://www.myweather2.com/City-Town/United-Kingdom/City-of-Westminster/London/14-Day-Forecast.aspx");
 
 
 
