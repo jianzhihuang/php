@@ -16,7 +16,7 @@
     .heroImage{
 
 
-        background-image: url("BG.jpg");
+        background-image: url("weather_BG.jpg");
         border-radius: 0;
         height: 100vh;
         margin-bottom: 0;
