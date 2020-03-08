@@ -8,7 +8,7 @@
 
 
 
-    preg_match("/Taking a look(.*?)moderate./i",$contents, $matches);
+    preg_match("/Taking a look (.*?) moderate./i",$contents, $matches);
 
     print_r($matches);
     echo $matches[1];
