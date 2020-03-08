@@ -10,8 +10,8 @@
 
     preg_match("/<strong>L(.*?) <\strong>/i",$contents, $matches);
 
-    print_r($matches);
-    // echo $matches[1];
+    // print_r($matches);
+    echo $matches[1];
 
 
 
