@@ -87,7 +87,7 @@
                     }else{
 
 
-                        $("#success").html(data).fadeIn();
+                        $("#success").html(date).fadeIn();
 
 
                     }
