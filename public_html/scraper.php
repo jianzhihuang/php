@@ -4,16 +4,12 @@
 
     $city = str_replace(" ","-",$city);
     
-    echo @file_get_contents("https://www.accuweather.com/en/gb/london/ec4a%202/weather-forecast/328328");
+    $contents = @file_get_contents("https://tenki.jp/forecast/".$city."/");
 
 
 
-    preg_match("/<strong>(.*?) <\strong>/i",$contents, $matches);
+    preg_match("/\"forecast-comment\">(.*?) <\/div>/i",$contents, $matches);
 
     // print_r($matches);
-    echo $matches[0];
-
-
-
-
+    echo $matches[1];
 ?>
