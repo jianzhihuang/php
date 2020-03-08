@@ -74,6 +74,8 @@
     $("#findMyWeather").click(function(event){
 
         event.preventDefault();
+        
+        $(".alert").hide();
 
         if ($("#city").val() != ""){
 
