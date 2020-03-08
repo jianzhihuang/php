@@ -1,7 +1,7 @@
 <?php
 
 
-    echo  @file_get_contents("https://www.accuweather.com/en/tw/taipei-city/315078/weather-forecast/315078");
+    echo  @file_get_contents("https://www.msn.com/zh-tw/weather");
 
     // preg_match("/Light rain/i",$contents, $matches);
 
