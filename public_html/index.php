@@ -2,136 +2,112 @@
 <html lang="zh-Hant-TW">
 
 <head>
-    <title>網站聯繫表單</title>
+    <title>天氣預報網站</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js'></script>
     <style type="text/css">
-        body {
-            background-color: #F2F3F5;
-        }
-        
-        #container {
-            padding-top: 60px;
-            width: 600px;
-            margin: auto;
-            font-family: "Helvetica Neue", "Helvetica", "Arial";
-        }
-        
-        .input-style {
-            border-radius: 5px;
-            border: 1px solid grey;
-            font-size: 1.1em;
-            padding-left: 20px;
-            margin-bottom: 10px;
-        }
-        
-        .input-width {
-            width: 300px;
-            height: 40px;
-        }
-        #mail-gender {
-            width: 323px;
-            height: 40px;
-        }
-        
-        label {
-            width: 200px;
-            float: left;
-            font-size: 1.2em;
-            padding-top: 8px;
-        }
-        
-        #mail-message {
-            width: 500px;
-            padding-top: 15px;
-        }
-        
-        #submitButton {
-            background-color: #AA47BC;
-            color: white;
-            width: 523px;
-            height: 40px;
-        }
-        
-        .form-error {
-            color: red;
-        }
-        .form-success {
-            color: green;
-        }
 
-        .input-error{
-
-            box-shadow: 0 0 5px red;
+    .heroImage{
 
 
-        }
+        background-image: url("BG.jpg");
+        border-radius: 0;
+        height: 100vh;
+        margin-bottom: 0;
+        background-size: cover;
+
+
+    }
+
+    .alert {
+
+        display: none;
+
+
+    }
+
     </style>
 </head>
 
 <body>
 
-    <div id="container"></div>
 
-    <form id="validationForm" method="post">
+    <div class="jumbotron heroImage text-center">
 
-        <label for="email-name">姓 名</label>
-        <input id="email-name" class="input-style input-width" type="text" name="name" placeholder="請輸入你的姓名">
+    <div class="container">
+        <h1 class="display-4 text-light mt-5">天氣預報</h1>
 
-        <label for="email-address">電子郵箱</label>
-        <input id="email-address" class="input-style input-width" type="text" name="email" placeholder="請輸入你的郵箱">
+        <p class="lead text-light">請在如下輸入框你要查詢的<strong class="text-warning">城市名稱</strong></p>
+        <form action="">
 
-        <label for="mail-gender">性 別</label>
-        <select name="gender" id="mail-gender" class="input-style">
-        <option value="male">男 性</option>
-        <option value="female">女 性</option>
-    </select>
+        <div class="form-group col-md-7 mx-auto" >
 
+        <input id="city" type="text"   name="city" class="form-control" placeholder="例如. London , Paris , San Francisco...">
 
-        <label for="pass1">密碼</label>
-        <input id="pass1" class="input-style input-width" type="password" name="pass1" placeholder="密 碼">
-
-        <label for="pass2">確認密碼</label>
-        <input id="pass2" type="password" class="input-style input-width" name="pass2" placeholder="確認密碼">
-
-        <textarea name="message" id="mail-message" class="input-style" cols="30" rows="10" placeholder="請描述你的狀況"></textarea>
-
-        <button id="submitButton" class="input-style" type="submit" name="submit">發送郵件</button>
+        </div>
 
 
-    </form>
+        </form>
+        
+        <button id="findMyWeather" type="submit" name="submit" class="btn btn-warning btn-lg">查 詢</button>
 
-    <div id="error"></div>
+        <div class="col-8 mx-auto mt-3">
 
+            <div id="success" class="alert alert-success">查詢成功</div>
+
+            <div id="fail" class="alert alert-danger">無法找到你查詢的城市,請重新在試</div>
+
+            <div id="noCity" class="alert alert-danger">請輸入城市名稱!</div>
+
+        </div>
+    </div>
+
+    </div>
     <script type="text/javascript">
-        $("#validationForm").submit(function(event) {
 
-            
+    $("#findMyWeather").click(function(event){
+
+        event.preventDefault();
+
+        if ($("#city").val() != ""){
+
+            $.get("scraper.php?city="+$("#city").val(), function(date){
+
+                if(date == ""){
+
+                    $("#fail").fadeIn();
 
 
-            event.preventDefault();
-            var name = $("#email-name").val();
-            var email = $("#email-address").val();
-            var pass1 = $("#pass1").val();
-            var pass2 = $("#pass2").val();
-            var message = $("#mail-message").val();
-            var submit = $("#submitButton").val();
+                    }else{
 
-            $("#error").load("mail.php",{
 
-                name : name,
-                email : email,
-                pass1 : pass1,
-                pass2 : pass2,
-                message : message,
-                submit : submit ,
+                        $("#success").html(data).fadeIn();
+
+
+                    }
+
+                }
 
             });
 
-        });
-    </script>
+
+        }else{
+
+            $("#noCity").fadeIn();
+
+        }
+
+
+
+    });
+
+</script>
 
 
 </body>
