@@ -1,7 +1,7 @@
 <?php
 
 
-    echo  @file_get_contents("https://www.foreca.com/Taiwan/Taipei");
+    echo  @file_get_contents("https://tenki.jp/");
 
     preg_match("/今明(.*?)天氣穩定/i",$contents, $matches);
 
