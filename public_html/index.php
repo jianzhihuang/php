@@ -11,7 +11,7 @@
 
     };
 
-    $query = "INSERT INTO users (name , email, password) VALUES('Kelly','kelly@gmail.com','newpass')";
+    $query = "INSERT INTO users (name , email , password) VALUES('Kelly','kelly@gmail.com','newpass')";
 
     if ($result = mysqli_query($connection , $query)){
 
