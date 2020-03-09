@@ -1,12 +1,12 @@
 <?php
 
 
-    $connection = mysqli_connect("localhost", "huangzhi_ken", "Qwe22034409", "huangzhi_demo");
+    $connection = mysqli_connect("localhost", "huangzhi_ken", "Qwe2204409", "huangzhi_demo");
 
 
     if (mysqli_connect_error()){
 
-        die("無法連結數據庫"."<br/>"); 
+        echo ("無法連結數據庫"."<br/>"); 
 
 
     };
