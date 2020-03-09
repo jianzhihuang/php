@@ -14,7 +14,7 @@
     // $query = "INSERT INTO users  (name ,email,password) VALUES('Kelly','kelly@gmail.com','newpass')";
 
 
-    $query = "UPDATE users SET email='john@gmail.com'";
+    $query = "UPDATE users SET email='kelly@gmail.com' WHERE id = 3";
 
     if ($result = mysqli_query($connection , $query)){
 
