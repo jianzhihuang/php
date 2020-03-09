@@ -14,6 +14,8 @@
 
     $cityName = $contents["city"]["name"];
 
+    $description = $contents["list"][7]["weather"][0]["description"];
+
     print_r($cityName);
     
 
