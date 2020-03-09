@@ -79,9 +79,9 @@
 
         if ($("#city").val() != ""){
 
-            $.get("scraper.php?city="+$("#city").val(), function(date){
+            $.get("scraper.php?city="+$("#city").val(), function(data){
 
-                if(date == ""){
+                if(data == ""){
 
                     $("#fail").fadeIn();
 
@@ -89,7 +89,7 @@
                     }else{
 
 
-                        $("#success").html(date).fadeIn();
+                        $("#success").html(data).fadeIn();
 
 
                     }
