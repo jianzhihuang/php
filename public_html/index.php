@@ -14,7 +14,7 @@
     // $query = "INSERT INTO users  (name ,email,password) VALUES('Kelly','kelly@gmail.com','newpass')";
 
 
-    $query = "SELECT * FROM `users`";
+    $query = "SELECT * FROM `users` WHERE name = 'Kelly'";
 
     if ($result = mysqli_query($connection , $query)){
 
@@ -24,7 +24,7 @@
             print_r($row);
 
         };
-            
+
 
     }else{
 
