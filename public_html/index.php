@@ -11,7 +11,7 @@
 
     };
 
-    $query = "SELECT * FROM `users` ";
+    $query = "INSERT INTO users (name) VALUES('Kelly')";
 
     if ($result = mysqli_query($connection , $query)){
 
