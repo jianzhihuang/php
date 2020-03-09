@@ -6,11 +6,12 @@
 
     if (mysqli_connect_error()){
 
-        echo "無法連結數據庫";
+        echo "無法連結數據庫"."<br>";
 
 
     };
 
 
+    echo "繼續運行代碼";
 
 ?>
