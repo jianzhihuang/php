@@ -10,7 +10,7 @@
 
     $contents =  file_get_contents("https://api.openweathermap.org/data/2.5/forecast?q=".$city."&appid=".$apiKey."&lang=zh_tw");
 
-
+    echo $contents;
     
 
     
