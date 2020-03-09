@@ -1,17 +1,17 @@
 <?php
 
-    $city = $_GET["city"] ;
+    // $city = $_GET["city"] ;
     
-    $city = str_replace(" ", "-", $city);
+    // $city = str_replace(" ", "-", $city);
     
-    $contents =  file_get_contents("https://tenki.jp/forecast/".$city."/");
+    $city = "4";
 
+    $apiKey = "4ee0a10db5a661f60c3282090670017e";
 
+    $contents =  file_get_contents("https://api.openweathermap.org/data/2.5/forecast?q=".$city."&appid=".$apiKey."&lang=zh_tw");
 
-    preg_match("/\"forecast-comment\">(.*?)<br>/i",$contents,$matches);
 
     
-    echo $matches[1];
 
     
 ?>
