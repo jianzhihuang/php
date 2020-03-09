@@ -1,10 +1,10 @@
 <?php
 
 
-    mysqli_connect("localhost", "huangzhi_ken", "Qwe22034409", "huangzhi_demo");
+    mysqli_connect("localhost", "huangzhi_ken", "Qwe2203409", "huangzhi_demo");
 
 
-    echo "已經連接數據庫";
+    echo mysqli_connect_error();
 
 
 
