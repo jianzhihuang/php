@@ -14,7 +14,7 @@
     // $query = "INSERT INTO users  (name ,email,password) VALUES('Kelly','kelly@gmail.com','newpass')";
 
 
-    $query = "SELECT * FROM `users` WHERE name = 'Kelly'";
+    $query = "SELECT * FROM `users` WHERE name LIKE '%n'";
 
     if ($result = mysqli_query($connection , $query)){
 
