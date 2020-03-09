@@ -4,7 +4,7 @@
     
     // $city = str_replace(" ", "-", $city);
     
-    $city = "4";
+    $city = "london";
 
     $apiKey = "4ee0a10db5a661f60c3282090670017e";
 
