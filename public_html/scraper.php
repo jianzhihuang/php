@@ -14,7 +14,7 @@
 
     $cityName = $contents["city"];
 
-    echo $cityName;
+    print_r($cityName);
     
 
     
