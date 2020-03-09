@@ -1,10 +1,10 @@
 <?php
 
-    // $city = $_GET["city"] ;
+    $city = $_GET["city"] ;
     
     // $city = str_replace(" ", "-", $city);
     
-    $city = "londossss";
+    // $city = "londossss";
 
     $apiKey = "4ee0a10db5a661f60c3282090670017e";
 
