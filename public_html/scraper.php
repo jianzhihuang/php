@@ -12,7 +12,9 @@
 
     $contents = json_decode($contents,true);
 
-    echo $contents;
+    $cityName = $contents["city"];
+
+    echo $cityName;
     
 
     
