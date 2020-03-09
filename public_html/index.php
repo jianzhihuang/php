@@ -19,9 +19,12 @@
     if ($result = mysqli_query($connection , $query)){
 
         // echo "已經找到相關內容";
-        $row = mysqli_fetch_array($result);
+        while ($row = mysqli_fetch_array($result)){
 
-        print_r($row);
+            print_r($row);
+
+        };
+            
 
     }else{
 
