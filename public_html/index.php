@@ -1,7 +1,7 @@
 <?php
 
 
-    mysqli_connect("localhost", "huangzhi_ken", "Qwe22034409", "huangzhi_demo");
+    mysqli_connect("localhost", "huangzhi_ken", "Qwe2203409", "huangzhi_demo");
 
 
     if (mysqli_connect_error()){
