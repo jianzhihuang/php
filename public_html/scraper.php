@@ -19,11 +19,15 @@
     $temperature = $contents["list"][7]["main"]["temp"] - 273.15 ;
 
     // print_r($temperature);
-
     $result = "城市: ".$cityName.",天氣狀況 : ".$description.", 溫度: ".$temperature."°C";
 
+    if ($cityName != ""){
 
-    echo $result;
+        echo $result;
+
+    }
+
+
     
 
     
