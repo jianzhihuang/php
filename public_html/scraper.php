@@ -16,7 +16,9 @@
 
     $description = $contents["list"][7]["weather"][0]["description"];
 
-    print_r($description);
+    $temperature = $contents["list"][7]["main"]["temp"] - 273.15 ;
+
+    print_r($temperature);
     
 
     
