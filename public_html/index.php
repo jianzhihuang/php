@@ -6,7 +6,7 @@
 
     if (mysqli_connect_error()){
 
-        die( "無法連結數據庫"."<br>"); 
+        die("無法連結數據庫"."<br/>"); 
 
 
     };
