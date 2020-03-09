@@ -4,7 +4,7 @@
     
     $city = str_replace(" ", "-", $city);
     
-    $contents =  @file_get_contents("https://tenki.jp/forecast/".$city."/");
+    $contents =  file_get_contents("https://tenki.jp/forecast/".$city."/");
 
 
 
