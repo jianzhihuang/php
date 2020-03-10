@@ -15,7 +15,7 @@
 
     $name = "Kel'ly";
 
-    $query = "SELECT name FROM `users` WHERE name = '".$name."'!= ''";
+    $query = "SELECT name FROM `users` WHERE name = '".mysqli_real_escape_string ($connection,$name)."'!= ''";
 
     if ($result = mysqli_query($connection , $query)){
 
