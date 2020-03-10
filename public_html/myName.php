@@ -7,8 +7,7 @@
     
     $_SESSION["name"] = "John";
 
-    print_r($_SESSION["name"]);
-
+    session_unset();
 
 
 
