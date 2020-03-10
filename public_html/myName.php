@@ -9,7 +9,7 @@
 
     session_unset();
 
-
+    echo "我清除SESSION變量後的值是:".$_SESSION["name"].".";
 
 
 ?>
