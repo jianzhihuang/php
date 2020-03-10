@@ -18,6 +18,11 @@
 
     if ($result = mysqli_query($connection , $query)){
 
+
+
+        echo mysqli_num_rows($result)."<br/>";
+
+
         // echo "已經找到相關內容";
         while ($row = mysqli_fetch_array($result)){
 
