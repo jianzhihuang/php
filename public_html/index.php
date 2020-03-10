@@ -4,6 +4,6 @@
 
     $_SESSION["name"] = "Ken";
 
-    print_r($_SESSION);
+    print_r($_SESSION["name"]);
 
 ?>
