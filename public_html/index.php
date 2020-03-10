@@ -20,7 +20,7 @@
 
 
 
-        echo mysqli_num_rows($result)."<br/>";
+        echo mysqli_num_rows($result);
 
 
         // echo "已經找到相關內容";
