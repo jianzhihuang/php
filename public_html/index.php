@@ -13,8 +13,9 @@
 
     // $query = "INSERT INTO users  (name ,email,password) VALUES('Kelly','kelly@gmail.com','newpass')";
 
+    $name = "Kel'ly";
 
-    $query = "SELECT name FROM `users` WHERE name = 'Kel\'ly'!= ''";
+    $query = "SELECT name FROM `users` WHERE name = '".$name."'!= ''";
 
     if ($result = mysqli_query($connection , $query)){
 
