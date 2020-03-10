@@ -1,45 +1,9 @@
 <?php
 
+    session_start();
 
-    $connection = mysqli_connect("localhost", "huangzhi_ken", "Qwe22034409", "huangzhi_demo");
+    $_SESSION["name"] = "Ken";
 
-
-    if (mysqli_connect_error()){
-
-        die("無法連結數據庫"."<br/>"); 
-
-
-    };
-
-    // $query = "INSERT INTO users  (name ,email,password) VALUES('Kelly','kelly@gmail.com','newpass')";
-
-    $name = "Kel'ly";
-
-    $query = "SELECT name FROM `users` WHERE name = '".mysqli_real_escape_string ($connection,$name)."'!= ''";
-
-    if ($result = mysqli_query($connection , $query)){
-
-
-
-        echo mysqli_num_rows($result);
-
-
-        // echo "已經找到相關內容";
-        while ($row = mysqli_fetch_array($result)){
-
-            print_r($row);
-
-        };
-
-
-    }else{
-
-        echo "無法找到相關內容";
-
-
-
-    }
-
-    // echo "繼續運行代碼";
+    print_r($_SESSION);
 
 ?>
