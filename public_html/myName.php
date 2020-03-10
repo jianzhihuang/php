@@ -8,6 +8,7 @@
     $_SESSION["name"] = "John";
 
     session_unset();
+    session_destroy();
 
     echo "我清除SESSION變量後的值是:".$_SESSION["name"].".";
 

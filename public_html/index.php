@@ -1,9 +1,9 @@
 <?php
 
-    session_start();
+    setcookie("id","test",time() + 60 * 60);
 
-    $_SESSION["name"] = "Ken";
+    echo $_COOKIE["id"];
 
-    print_r($_SESSION["name"]);
+
 
 ?>
