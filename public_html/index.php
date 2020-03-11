@@ -10,7 +10,7 @@
         else{
 
             if (strlen($_POST['password'])<8) $error.="<br />Please enter your a password at least 8 characters.";
-            if (preg_match('`[A-Z]`',$_POST['password']))$error.="<br />Please include at least one capital letter in your password";
+            if (!preg_match('`[A-Z]`',$_POST['password']))$error.="<br />Please include at least one capital letter in your password";
 
         }
 
