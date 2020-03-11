@@ -1,6 +1,8 @@
 <?php
 
-    echo md5("pasdad2312");
+    $salt="adlksqwefsrfewdsadf";
+
+    echo md5($salt."pasdad2312");
 
    
 
