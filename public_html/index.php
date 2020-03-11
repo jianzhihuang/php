@@ -15,7 +15,14 @@
         }
 
         if  ($error) echo "There were error(s) in your signup details:".$error;
+        else{
+            
+            $link =
+            mysqli_connect("localhost","huangzhi_ken","Qwe22034409","huangzhi_demo");
+            $query = "SELECT * FROM users WHERE email=".mysqli_real_escape_string($link,$_POST['email'])."'";
 
+
+        }
     }
 
 ?>
