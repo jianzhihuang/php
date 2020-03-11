@@ -1,7 +1,15 @@
 <?php
 
-    echo md5(md5($row['id'])."password");
-
-   
 
 ?>
+
+
+<form action="">
+
+    <input type="email" name="email" id="email" />
+    <input type="password" name="password" id="password" />
+    <input type="submit" value="Sign Up"/>
+
+
+
+</form>
