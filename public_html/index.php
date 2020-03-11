@@ -1,8 +1,6 @@
 <?php
 
-    $salt="adlksqwefsrfewdsadf";
-
-    echo md5($salt."pasdad2312");
+    echo md5(md5($row['id'])."password");
 
    
 
