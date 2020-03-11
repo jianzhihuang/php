@@ -21,7 +21,7 @@
 ?>
 
 
-<form method="$_POST" action="">
+<form method="post" action="">
 
     <input type="email" name="email" id="email" />
     <input type="password" name="password" id="password" />
