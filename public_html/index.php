@@ -1,20 +1,7 @@
 <?php
 
-    setcookie("id","",time() + 60 * 60);
+    echo md5("password");
 
-    // echo $_COOKIE["id"];
-
-    if (count($_COOKIE) > 0){
-
-        echo "Cookies已經設置";
-
-
-    }else{
-
-        echo "Cookies沒有被設置";
-
-
-    };
-
+   
 
 ?>
