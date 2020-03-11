@@ -3,7 +3,7 @@
     if ($_POST['submit']){
 
         if(!$_POST['email']) $error.="<br />Please enter your email.";
-        elseif (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))$error.="<br />Please a valid email address.";
+        else if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))$error.="<br />Please a valid email address.";
 
 
         if(!$_POST['password']) $error.="<br />Please enter your password.";
