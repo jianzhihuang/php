@@ -16,7 +16,7 @@
 
         if  ($error) echo "<br />There were error(s) in your signup details:".$error;
 
-    };
+    }
 
 ?>
 
