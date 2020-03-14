@@ -3,7 +3,10 @@
 
     session_start();
 
-    if ($_POST['submit']){
+    $link =
+            mysqli_connect("localhost","huangzhi_ken","Qwe22034409","huangzhi_demo");
+
+    if ($_POST['submit']=="Sign Up"){
 
         if(!$_POST['email']) $error.="<br />Please enter your email.";
         else if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))$error.="<br />Please a valid email address.";
@@ -49,7 +52,16 @@
 
         }
     }
+    if ($_POST['submit']=="Log In"){
+        $query="SELECT * FROM users WHERE email='".mysqli_real_escape_string($link,$_POST['loginemail'])."' AND password='".md5(md5($_POST['loginemail']).$_POST['loginpassword'])."'LIMIT 1";
 
+        $result = mysqli_query($link,$query);
+
+        $row = mysqli_fetch_array($result);
+        
+        print_r($row);
+
+    }
 ?>
 
 
@@ -58,6 +70,16 @@
     <input type="email" name="email" id="email" value="<?php echo addslashes($_POST['email']);?>"/>
     <input type="password" name="password" id="password" value="<?php echo addslashes($_POST['password']);?>"/>
     <input type="submit" name="submit" value="Sign Up"/>
+
+
+
+</form>
+
+<form method="post" action="">
+
+    <input type="email" name="loginemail" id="email" value="<?php echo addslashes($_POST['email']);?>"/>
+    <input type="password" name="loginpassword" id="loginpassword" value="<?php echo addslashes($_POST['password']);?>"/>
+    <input type="submit" name="submit" value="Log In"/>
 
 
 
