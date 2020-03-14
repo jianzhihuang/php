@@ -1,5 +1,8 @@
 <?php
 
+
+    session_start();
+
     if ($_POST['submit']){
 
         if(!$_POST['email']) $error.="<br />Please enter your email.";
@@ -36,6 +39,10 @@
 
                 echo "You've been signed up!";
                 
+                $_SESSION['id']=mysqli_insert_id($link);
+
+                print_r($_SESSION);
+
             }
 
 
