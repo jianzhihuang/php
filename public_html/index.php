@@ -23,7 +23,7 @@
 
             $result = mysqli_query($link,$query);
             
-            echo $results = mysqli_num_rows($result);
+            $results = mysqli_num_rows($result);
 
             if ($results) echo "That email address is already registered,Do you want log in?";
 
@@ -32,6 +32,9 @@
 
                 $query = "INSERT INTO users (email,password ) VALUES ('".mysqli_real_escape_string($link,$_POST['email'])."','".md5(md5($_POST['email']).$_POST['password'])."')";
 
+                mysqli_query($link,$query);
+
+                echo "You've been signed up!";
                 
             }
 
