@@ -59,7 +59,19 @@
 
         $row = mysqli_fetch_array($result);
         
-        print_r($row);
+        if($row){
+
+            $_SESSION['id']=$row['id'];
+            
+            print_r($_SESSION);
+
+            //Redirect to logged in page
+
+
+        }else {
+
+            echo "We could not find a user with that email and password. Please try again later.";
+        }
 
     }
 ?>
