@@ -1,4 +1,4 @@
-<?php include("connection.php");?>
+<?php include("login.php");?>
 <form method="post" action="">
 
     <input type="email" name="email" id="email" value="<?php echo addslashes($_POST['email']);?>"/>
