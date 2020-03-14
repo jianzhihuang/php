@@ -43,6 +43,7 @@
 
                 print_r($_SESSION);
 
+                //Redirect to logged in page
             }
 
 
@@ -54,8 +55,8 @@
 
 <form method="post" action="">
 
-    <input type="email" name="email" id="email" />
-    <input type="password" name="password" id="password" />
+    <input type="email" name="email" id="email" value="<?php echo addslashes($_POST['email']);?>"/>
+    <input type="password" name="password" id="password" value="<?php echo addslashes($_POST['password']);?>"/>
     <input type="submit" name="submit" value="Sign Up"/>
 
 
