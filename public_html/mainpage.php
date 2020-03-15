@@ -32,8 +32,8 @@
     </style>
 
     <body>
-
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <!-- navbar-expand-xl -->
+        <nav class="navbar  navbar-light bg-light">
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" type="button">
                 <span class="navbar-toggler-icon"></span>
