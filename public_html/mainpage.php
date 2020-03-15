@@ -39,7 +39,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                <a href="#" class="navbar-brand footer-height">Sectret Diary</a>
+                <a href="#" class="navbar-brand">Sectret Diary</a>
 
             <div class="collapse navbar-collapse" id="navbarCollapse"> 
                     <ul class="navbar-nav nav">
