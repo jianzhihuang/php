@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col" style="width: 18rem;">
                     <div class="card">
-                        <img src="image/view.jpg" class="card-img-top">
+                        <img src="project/image/view.jpg" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">標 題</h5>
                             <p class="card-text">這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,</p>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="image/images.png" class="card-img-top">
+                        <img src="project/image/images.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">標 題</h5>
                             <p class="card-text">這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,</p>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="col">
                     <div class="card " style="width: 18rem;">
-                        <img src="image/3.jpg" class="card-img-top">
+                        <img src="project/image/3.jpg" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">標 題</h5>
                             <p class="card-text">這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,</p>
