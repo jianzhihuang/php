@@ -45,7 +45,7 @@
  
                 <ul class="navbar-nav mr-auto"></ul>
 
-                <form class="form-group" method="post">
+                <form class="form-inline" method="post">
                     <input class="form-control" type="email" name="loginemail" placeholder="郵箱地址" value="<?php echo addslashes($_POST['loginemail']);?>">
                     <input class="form-control" type="password" name="loginpassword" placeholder="密碼" value="<?php echo addslashes($_POST['loginpassword']);?>">
 
