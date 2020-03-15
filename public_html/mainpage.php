@@ -43,7 +43,7 @@
                 <a href="#" class="navbar-brand">Sectret Diary</a>
 
  
-                <ul class="navbar-nav  nav">
+                <ul class="navbar-nav  nav mr-2">
 
                 <li><a href="">Log Out</a></li>
 
