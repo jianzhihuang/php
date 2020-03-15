@@ -12,7 +12,7 @@
     <title>ken-huang.com</title>
     <style>
         .heroImage {
-            background-image: url("image/hero1.jpg");
+            background-image: url("img/hero1.jpg");
             height: 550px;
             border-radius: 0;
             background-size: cover;
