@@ -33,28 +33,7 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-
-                <a href="#" class="navbar-brand">Sectret Diary</a>
-
- 
-                <ul class="navbar-nav mr-auto"></ul>
-
-                <form class="form-inline" method="post">
-                    <input class="form-control" type="email" name="loginemail" placeholder="郵箱地址" value="<?php echo addslashes($_POST['loginemail']);?>">
-                    <input class="form-control" type="password" name="loginpassword" placeholder="密碼" value="<?php echo addslashes($_POST['loginpassword']);?>">
-
-                    <input type="submit" name="submit" class="btn btn-success" value="Log In">
-                </form>  
-                        
-            </div>
-
-        </nav>
+        
 
         <div class="jumbotron heroImage text-center">
             <h1 class="text-light display-4">Sectret Diary</h1>
