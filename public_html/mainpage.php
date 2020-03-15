@@ -75,7 +75,7 @@
             
         <div class="row">
         
-                <textarea id="diary" class="form-control"><?php echo $diary;?>
+                <textarea class="form-control"><?php echo $diary;?>
                 </textarea>
             
         </div>
@@ -137,8 +137,8 @@
         
         <script>
             // $(".contentContainer").css("min-height",$(window).height());
-            $("#diary").css("min-height",$(window).height()*0.8);
-            $("#diary").keyup(function() {
+            $("textarea").css("min-height",$(window).height()*0.8);
+            $("textarea").keyup(function() {
 
             $.post("updatediary.php", {diary:$("textarea").val()});
 
