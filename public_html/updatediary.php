@@ -12,11 +12,3 @@
     print_r($_SESSION);
 
 ?>
-
-<form method="post">
-
-<input name="diary"/>
-
-<input type="submit"/>
-
-</form>
