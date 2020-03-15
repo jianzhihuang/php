@@ -71,9 +71,9 @@
         </nav>
 
 
-        <div class="jumbotron heroImage text-center">
+        <div class="jumbotron heroImage contentContainer">
             
-        <div class="row contentContainer">
+        <div class="row">
         
         <textarea name="" class="form-control" id=""><?php echo $diary;?></textarea>
             
