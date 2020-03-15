@@ -79,8 +79,6 @@
             
         </div>
         </div>
-
-        <textarea name="" class="form-control" id=""><?php echo $diary;?></textarea>
         <div class="container text-center my-5">
             <h1 class="display-4">優 點</h1>
             <p class="lead">為什麼這款軟體如此與眾不同</p>
@@ -139,11 +137,12 @@
         <script>
             $(".contentContainer").css("min-height",$(window).height());
             $("textarea").css("min-height",$(window).height()*0.8);
-            $("textarea").keyup(function(){
+            $("textarea").keyup(function() {
 
-                $.post("updatediary.php", {diary:$("textarea").val()});
+            $.post("updatediary.php", {diary:$("textarea").val()});
 
             });
+
 
 
         </script>
