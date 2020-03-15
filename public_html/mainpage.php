@@ -42,12 +42,15 @@
 
                 <a href="#" class="navbar-brand">Sectret Diary</a>
 
- 
-                <ul class="navbar-nav pull-right">
+            <div> 
+                    <ul class="navbar-nav pull-right">
 
-                <li><a href="">Log Out</a></li>
+                        <li><a href="">Log Out</a></li>
 
-                </ul>
+                    </ul>
+        
+                </div>
+
 
                         
             </div>
