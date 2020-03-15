@@ -59,39 +59,7 @@
         </nav>
 
 
-        <div class="jumbotron heroImage text-center">
-            <h1 class="text-light display-4">Sectret Diary</h1>
 
-            <p class="lead text-light">Your own private diary , with you wherever you go.</p>
-            <?php
-            
-                if($error){
-
-                    echo '<div class="alert alert-danger">'.addslashes($error).'</div>';
-
-                }
-            
-            ?>
-
-            <p><strong class="text-warning">Interested? Sign Up Below!</strong></p>
-            <label for="email" class="text-light">Email Address</label>
-            <form method="post" action="">
-
-            <div class="input-group col-md-7 mx-auto">
-            <div class="input-group-prepend">
-                    <span class="input-group-text">@</span>
-                </div>
-                <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo addslashes($_POST['email']);?>">
-            </div>
-            <label class="text-light mt-2" for="password">Password</label>
-            <div class="input-group col-md-7 mx-auto">
-                <input type="password" name="password" placeholder="請輸入你的密碼" class="form-control" value="<?php echo addslashes($_POST['password']);?>">
-            </div>
-            <div class="mt-3">
-                <input type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up"></input>
-            </div>
-            </form>
-        </div>
         <div class="container text-center my-5">
             <h1 class="display-4">優 點</h1>
             <p class="lead">為什麼這款軟體如此與眾不同</p>
