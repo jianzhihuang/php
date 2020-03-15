@@ -75,7 +75,8 @@
             
         <div class="row">
         
-        <textarea name="" class="form-control" id=""><?php echo $diary;?></textarea>
+                <textarea class="form-control"><?php echo $diary;?>
+                </textarea>
             
         </div>
         </div>
