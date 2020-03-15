@@ -47,6 +47,7 @@
 
                 <a href="#" id="Sectret" class="navbar-brand mr-auto font-weight-bold">Sectret Diary</a>
 
+            </div>
             <div class="pull-right">
                     <ul class="navbar-nav nav">
 
@@ -54,10 +55,6 @@
 
                     </ul>
         
-            </div>
-
-
-                        
             </div>
 
         </nav>
