@@ -11,10 +11,10 @@
 
 ?>
 
-<form action="" method="post">
+<!-- <form action="" method="post">
 
 <input name="diary" />
 <input type="submit"/>
 
 
-</form>
+</form> -->
