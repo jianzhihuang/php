@@ -60,7 +60,7 @@
             <p class="lead text-light">Your own private diary , with you wherever you go.</p>
 
             <p><strong class="text-warning">Interested? Sign Up Below!</strong></p>
-
+            <label for="email" class="text-light">Email Address</label>
             <form method="post" action=""></form>
 
             <div class="input-group col-md-7 mx-auto">
