@@ -70,7 +70,7 @@
 
             <p><strong class="text-warning">Interested? Sign Up Below!</strong></p>
             <label for="email" class="text-light">Email Address</label>
-            <form method="post" action=""></form>
+            <form method="post" action="">
 
             <div class="input-group col-md-7 mx-auto">
             <div class="input-group-prepend">
@@ -85,7 +85,7 @@
             <div class="mt-3">
                 <input type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up">Sign Up</input>
             </div>
-
+            </form>
         </div>
         <div class="container text-center my-5">
             <h1 class="display-4">優 點</h1>
