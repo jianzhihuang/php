@@ -40,7 +40,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                <a href="#" class="navbar-brand display-4">Sectret Diary</a>
+                <h1><a href="#" class="navbar-brand">Sectret Diary</a></h1>
 
  
                 <ul class="navbar-nav mr-auto"></ul>
