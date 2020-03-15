@@ -1,4 +1,16 @@
-<?php include("login.php");?>
+<?php include("login.php");
+	session_start();
+	
+	include("connection.php");
+	
+	$query="SELECT diary FROM users WHERE id='".$_SESSION['id']."' LIMIT 1";
+	
+	$result = mysqli_query($link, $query);
+	
+	$row = mysqli_fetch_array($result);
+	
+	$diary = $row['diary'];
+?>
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
