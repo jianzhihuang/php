@@ -42,9 +42,9 @@
 
                 <a href="#" class="navbar-brand">Sectret Diary</a>
 
+                <ul class="navbar-nav mr-auto"></ul>
 
-
-                <form class="form-group" method="post">
+                <form class="form-inline" method="post">
                     <input class="form-control mr-2" type="email" name="loginemail" placeholder="郵箱地址" value="<?php echo addslashes($_POST['loginemail']);?>">
                     <input class="form-control mr-2" type="password" name="loginpassword" placeholder="密碼" value="<?php echo addslashes($_POST['loginpassword']);?>">
                     <input type="submit" name="submit" class="btn btn-outline-warning" value="LogIn"></input>
@@ -63,6 +63,11 @@
 
             <form method="post" action=""></form>
 
+            <div class="input-group col-md-7 mx-auto">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+
+                </div>
             <div class="form-group">
                 <label for="email" class="text-light">Email Address</label>
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo addslashes($_POST['email']);?>">
