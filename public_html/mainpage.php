@@ -60,7 +60,7 @@
 
 
         <div class="jumbotron heroImage text-center">
-            
+            <textarea name="" class="form-control" id=""></textarea>
             
         </div>
         <div class="container text-center my-5">
