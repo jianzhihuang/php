@@ -132,7 +132,7 @@
   	
   	</div>
   	
-  	<div class="container contentContainer" id="topContainer">
+  	<div class="jumbotron heroImage text-center">
   	
   		<div class="row">
   			
