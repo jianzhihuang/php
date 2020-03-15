@@ -63,11 +63,6 @@
 
             <form method="post" action=""></form>
 
-            <div class="input-group col-md-7 mx-auto">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">@</span>
-
-                </div>
             <div class="form-group">
                 <label for="email" class="text-light">Email Address</label>
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo addslashes($_POST['email']);?>">
@@ -80,7 +75,6 @@
                 <button type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up">發 送</button></div>
 
         </div>
-    </div>
         <div class="container text-center my-5">
             <h1 class="display-4">優 點</h1>
             <p class="lead">為什麼這款軟體如此與眾不同</p>
