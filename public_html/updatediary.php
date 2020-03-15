@@ -15,6 +15,6 @@
 
 <input name="diary"/>
 
-<input type="sumit"/>
+<input type="submit"/>
 
 </form>
