@@ -42,6 +42,7 @@
 
                 <a href="#" class="navbar-brand">Sectret Diary</a>
 
+<!--
                 <ul class="navbar-nav mr-auto"></ul>
 
                 <form class="form-group" method="post">
@@ -49,6 +50,25 @@
                     <input class="form-control mr-2" type="password" name="loginpassword" placeholder="密碼" value="<?php echo addslashes($_POST['loginpassword']);?>">
                 </form>
             <input type="submit" name="submit" class="btn btn-success" value="Log In">
+-->
+                
+                <form class="navbar-form navbar-right" method="post">
+  				
+  					<div class="form-group">
+  					
+  						<input type="email" name="loginemail" placeholder="Email" class="form-control" value="<?php echo addslashes($_POST['loginemail']); ?>"/>
+  					
+  					</div>
+  					
+  					<div class="form-group">
+  					
+  						<input type="password" name="loginpassword" placeholder="Password" class="form-control" value="<?php echo addslashes($_POST['loginpassword']); ?>" />
+  					
+  					</div>
+  				
+  					<input type="submit" name="submit" class="btn btn-success" value="Log In" >
+  					
+  				</form>
 
             </div>
 
