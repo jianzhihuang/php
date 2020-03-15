@@ -9,6 +9,12 @@
 
     mysqli_query($link,$query);
 
-
-
 ?>
+
+<form action="" method="post">
+
+<input name="diary" />
+<input type="submit"/>
+
+
+</form>
