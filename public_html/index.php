@@ -58,7 +58,7 @@
 
             <p class="lead text-light">Your own private diary , with you wherever you go.</p>
 
-            <p class="text-warning">Interested? Sign Up Below!</p>
+            <strong class="text-warning">Interested? Sign Up Below!</strong>
 
             <form method="post" action=""></form>
 
