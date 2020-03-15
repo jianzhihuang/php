@@ -123,8 +123,8 @@
             $("textarea").css("min-height",$(window).height()*0.8);
             $("textarea").keyup(function(){
 
-                alert("changed!");
-                $.post("updatediary.php",{diary:$("textarea").val()});
+
+                $.post("updatediary.php", {diary:$("textarea").val()});
 
             });
 
