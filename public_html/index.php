@@ -62,8 +62,11 @@
             <p><strong class="text-warning">Interested? Sign Up Below!</strong></p>
 
             <form method="post" action=""></form>
-
-            <div class="form-group mr-auto">
+            
+            <div class="input-group col-md-7 mx-auto">
+            <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                </div>
                 <label for="email" class="text-light">Email Address</label>
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo addslashes($_POST['email']);?>">
             </div>
@@ -72,7 +75,8 @@
                 <input type="password" name="password" placeholder="Password" class="form-control" value="<?php echo addslashes($_POST['password']);?>">
             </div>
             <div class="mt-3">
-                <button type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up">發 送</button></div>
+                <button type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up">發 送</button>
+            </div>
 
         </div>
         <div class="container text-center my-5">
