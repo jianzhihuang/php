@@ -64,7 +64,7 @@
         </nav>
 
         <div class="jumbotron heroImage text-center">
-            <h1 class="text-light display-4">我的軟體</h1>
+            <h1 class="text-light display-4">Sectret Diary</h1>
 
             <p class="lead text-light">你可以馬上試用這款軟體</p>
 
