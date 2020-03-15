@@ -32,8 +32,7 @@
     </style>
 
     <body>
-    <!-- navbar-expand-xl -->
-        <nav class="navbar  navbar-light bg-light">
+        <nav class="navbar  navbar-expand-xl navbar-light bg-light">
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +41,7 @@
 
                 <a href="#" class="navbar-brand">Sectret Diary</a>
 
-            <div> 
+            <div class="collapse navbar-collapse" id="navbarCollapse"> 
                     <ul class="navbar-nav nav mx-auto">
 
                         <li><a href="">Log Out</a></li>
