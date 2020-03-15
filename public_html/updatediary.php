@@ -9,6 +9,8 @@
 
     mysqli_query($link,$query);
 
+    print_r($_SESSION);
+
 ?>
 
 <form method="post">
