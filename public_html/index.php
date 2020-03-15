@@ -58,6 +58,15 @@
             <h1 class="text-light display-4">Sectret Diary</h1>
 
             <p class="lead text-light">Your own private diary , with you wherever you go.</p>
+            <?php
+            
+                if($error){
+
+                    echo '<div class="alert alert-danger">'.addslashes($error).'</div>';
+
+                }
+            
+            ?>
 
             <p><strong class="text-warning">Interested? Sign Up Below!</strong></p>
             <label for="email" class="text-light">Email Address</label>
