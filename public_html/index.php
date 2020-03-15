@@ -124,7 +124,7 @@
         <div class="jumbotron text-center footer-height">
             <h1 class="display-4">下載軟體</h1>
             <p class="lead">聯繫方式:p0921442701@163.com</p>
-            <img src="image/App_Store_(black).png" id="appstoreImg">
+            <img src="project/image/App_Store_(black).png" id="appstoreImg">
         </div>
 
         <!-- Optional JavaScript -->
