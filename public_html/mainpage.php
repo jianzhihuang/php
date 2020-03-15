@@ -34,7 +34,7 @@
     <body>
         <nav class="navbar  navbar-expand-xl navbar-light bg-light">
         <a href="#" class="navbar-brand">Sectret Diary</a>
-            <button class="navbar-toggler mr-auto my-auto" data-toggle="collapse" data-target="#navbarCollapse" type="button">
+            <button class="navbar-toggler mr-auto mt-auto" data-toggle="collapse" data-target="#navbarCollapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
