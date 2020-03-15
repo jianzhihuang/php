@@ -71,11 +71,11 @@
         </nav>
 
 
-        <!-- <div class="jumbotron heroImage text-center">
-             -->
+        <div class="jumbotron heroImage text-center">
+            
 
 
-        <div class="row">
+        	<div class="row">
   			
   			<div class="col-md-6 col-md-offset-3" id="topRow">
   			
@@ -90,7 +90,7 @@
                 </textarea>
             
         </div> -->
-        <!-- </div> -->
+        </div>
         <div class="container text-center my-5">
             <h1 class="display-4">優 點</h1>
             <p class="lead">為什麼這款軟體如此與眾不同</p>
