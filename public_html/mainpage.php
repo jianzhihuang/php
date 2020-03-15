@@ -48,15 +48,16 @@
                 <a href="#" id="Sectret" class="navbar-brand mr-auto font-weight-bold">Sectret Diary</a>
 
             </div>    
-        </nav>
-        <div class="pull-right">
-                    <ul class="navbar-nav nav">
+            <div class="pull-right">
+                    <ul class="">
 
                         <li><a href="">Log Out</a></li>
 
                     </ul>
         
-            </div>
+            </div> 
+        </nav>
+
 
         <div class="jumbotron heroImage text-center">
             <h1 class="text-light display-4">Sectret Diary</h1>
