@@ -40,18 +40,7 @@
 
                 <a href="#" class="navbar-brand">Sectret Diary</a>
 
-                <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">主 頁</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">關於我們</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">下載App</a>
-                    </li>
-                </ul>
+  
 
                 <form class="form-inline">
                     <input class="form-control mr-2" type="email" name="email" placeholder="郵箱地址">
@@ -66,9 +55,9 @@
         <div class="jumbotron heroImage text-center">
             <h1 class="text-light display-4">Sectret Diary</h1>
 
-            <p class="lead text-light">你可以馬上試用這款軟體</p>
+            <p class="lead text-light">Your own private diary , with you wherever you go.</p>
 
-            <p class="lead text-light">如果你想了解更多關於這款軟體的資訊,請<strong class="text-warning">加入我們的討論群!</strong></p>
+            <p class="lead text-light">如果你想了解更多關於這款軟體的資訊,請<strong class="text-warning">Interested? Sign Up Below!</strong></p>
 
             <div class="input-group col-md-7 mx-auto">
                 <div class="input-group-prepend">
