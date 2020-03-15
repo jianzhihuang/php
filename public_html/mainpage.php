@@ -71,7 +71,7 @@
         </nav>
 
 
-        <div class="jumbotron heroImage text-center">
+        <div class="jumbotron heroImage text-center contentContainer">
             
         <div class="row">
         
