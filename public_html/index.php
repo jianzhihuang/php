@@ -83,7 +83,7 @@
                 <input type="password" name="password" placeholder="請輸入你的密碼" class="form-control" value="<?php echo addslashes($_POST['password']);?>">
             </div>
             <div class="mt-3">
-                <button type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up">發 送</button>
+                <button type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up"></button>
             </div>
 
         </div>
