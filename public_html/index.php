@@ -58,8 +58,8 @@
 
             <p class="lead text-light">Your own private diary , with you wherever you go.</p>
 
-            <p class="lead text-light">如果你想了解更多關於這款軟體的資訊,請<strong class="text-warning">Interested? Sign Up Below!</strong></p>
-
+            <p><strong class="text-warning">Interested? Sign Up Below!</strong></p><strong class="text-warning">Interested? Sign Up Below!</strong>
+            
             <form method="post" action=""></form>
 
             <div class="form-group">
