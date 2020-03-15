@@ -63,11 +63,11 @@
 
             <form method="post" action=""></form>
 
-            <div class="form-group">
+            <div class="form-group mr-auto">
                 <label for="email" class="text-light">Email Address</label>
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo addslashes($_POST['email']);?>">
             </div>
-            <div class="form-group">
+            <div class="form-group mr-auto">
                 <label class="text-light" for="password">Password</label>
                 <input type="password" name="password" placeholder="Password" class="form-control" value="<?php echo addslashes($_POST['password']);?>">
             </div>
