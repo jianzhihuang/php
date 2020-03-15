@@ -120,7 +120,7 @@
         
         <script>
             $(".contentContainer").css("min-height",$(window).height());
-            $("textarea").css("min-height",$(window).height()*0.7);
+            $("textarea").css("min-height",$(window).height()*0.8);
 
 
         </script>
