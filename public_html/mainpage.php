@@ -37,9 +37,9 @@
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse mr-auto" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                <a href="#" class="navbar-brand">Sectret Diary</a>
+                <a href="#" class="navbar-brand footer-height">Sectret Diary</a>
 
             <div class="collapse navbar-collapse" id="navbarCollapse"> 
                     <ul class="navbar-nav nav">
