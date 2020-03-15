@@ -9,6 +9,6 @@
 
     mysqli_query($link,$query);
 
-  
+
 
 ?>
