@@ -44,11 +44,11 @@
 
                 <ul class="navbar-nav mr-auto"></ul>
 
-                <form class="form-group" method="post">
+                <form class="form-inline" method="post">
                     <input class="form-control mr-2" type="email" name="loginemail" placeholder="郵箱地址" value="<?php echo addslashes($_POST['loginemail']);?>">
                     <input class="form-control mr-2" type="password" name="loginpassword" placeholder="密碼" value="<?php echo addslashes($_POST['loginpassword']);?>">
                 </form>
-                 <input type="submit" name="submit" class="btn btn-success" value="Log In">
+            <input type="submit" name="submit" class="btn btn-success" value="Log In">
 
             </div>
 
