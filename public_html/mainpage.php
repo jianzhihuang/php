@@ -124,7 +124,7 @@
             $("textarea").keyup(function(){
 
 
-                alert ("changed!");
+                $.post("updatediary.php",{diary:$("textarea").val()});
 
             });
 
