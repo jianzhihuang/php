@@ -80,6 +80,7 @@
                 <button type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up">發 送</button></div>
 
         </div>
+    </div>
         <div class="container text-center my-5">
             <h1 class="display-4">優 點</h1>
             <p class="lead">為什麼這款軟體如此與眾不同</p>
