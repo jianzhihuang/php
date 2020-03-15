@@ -69,8 +69,8 @@
                 </div>
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo addslashes($_POST['email']);?>">
             </div>
-            <label class="text-light" for="password">Password</label>
-            <div class="input-group col-md-7 mx-auto mr-2">
+            <label class="text-light mx-auto" for="password">Password</label>
+            <div class="input-group col-md-7 mx-auto">
                 <input type="password" name="password" placeholder="請輸入你的密碼" class="form-control" value="<?php echo addslashes($_POST['password']);?>">
             </div>
             <div class="mt-3">
