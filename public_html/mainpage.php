@@ -136,7 +136,7 @@
         </script>
         
         <script>
-            $(".contentContainer").css("min-height",$(window).height());
+            // $(".contentContainer").css("min-height",$(window).height());
             $("textarea").css("min-height",$(window).height()*0.8);
             $("textarea").keyup(function() {
 
