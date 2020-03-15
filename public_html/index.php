@@ -27,6 +27,12 @@
         #appstoreImg {
             width: 300px;
         }
+
+        .white{
+
+            color:white;
+
+        }
     </style>
 
     <body>
@@ -62,7 +68,7 @@
             <form method="post" action=""></form>
 
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="email" class="text-light">Email Address</label>
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo $_POST['email']?>">
             </div>
             <div class="form-group">
