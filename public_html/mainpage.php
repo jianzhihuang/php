@@ -41,7 +41,7 @@
 
                 <a href="#" class="navbar-brand">Sectret Diary</a>
 
-            <div class="collapse navbar-collapse pull-right" id="navbarCollapse"> 
+            <div class="collapse navbar-collapse" id="navbarCollapse"> 
                     <ul class="navbar-nav nav col-md-7 mx-auto">
 
                         <li><a href="">Log Out</a></li>
