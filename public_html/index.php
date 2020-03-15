@@ -28,11 +28,6 @@
             width: 300px;
         }
 
-        .white{
-
-            color:white;
-
-        }
     </style>
 
     <body>
@@ -72,7 +67,7 @@
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo $_POST['email']?>">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label class="text-light" for="password">Password</label>
                 <input type="password" name="password" placeholder="Password" class="form-control" value="<?php echo $_POST['password']?>">
             </div>
             <div class="mt-3">
