@@ -59,15 +59,18 @@
 
             <p class="lead text-light">如果你想了解更多關於這款軟體的資訊,請<strong class="text-warning">Interested? Sign Up Below!</strong></p>
 
-            <div class="input-group col-md-7 mx-auto">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">@</span>
+            <form method="post" action=""></form>
 
-                </div>
-                <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo $_POST['email']?>">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Password" class="form-control" value="<?php echo $_POST['password']?>">
             </div>
             <div class="mt-3">
-                <button type="button" name="submit" class="btn btn-warning btn-lg">發 送</button></div>
+                <button type="submit" name="submit" class="btn btn-warning btn-lg" value="Sign Up">發 送</button></div>
 
         </div>
         <div class="container text-center my-5">
