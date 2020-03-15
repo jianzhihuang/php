@@ -44,7 +44,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                <a href="#" id="#Sectret" class="navbar-brand mr-auto font-weight-bold">Sectret Diary</a>
+                <a href="#" id="Sectret" class="navbar-brand mr-auto font-weight-bold">Sectret Diary</a>
 
             <div>
                     <ul class="navbar-nav nav">
