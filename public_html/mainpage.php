@@ -32,7 +32,7 @@
         #Sectret{
 
             font-size:1.7rem;
-            background-color: grey;
+            color: grey;
 
         }
 
