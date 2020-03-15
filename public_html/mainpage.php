@@ -33,7 +33,7 @@
 
     <body>
         <nav class="navbar  navbar-expand-xl navbar-light bg-light">
-        <a href="#" class="navbar-brand mr-auto">Sectret Diary</a>
+        <a href="#" class="navbar-brand">Sectret Diary</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
