@@ -19,7 +19,7 @@
 
         }
 
-        if  ($error) echo "There were error(s) in your signup details:".$error;
+        if  ($error) $error = "There were error(s) in your signup details:".$error;
         else{
             
             $link =
@@ -30,7 +30,7 @@
             
             $results = mysqli_num_rows($result);
 
-            if ($results) echo "That email address is already registered,Do you want log in?";
+            if ($results) $error = "That email address is already registered,Do you want log in?";
 
             else{
 
@@ -69,7 +69,7 @@
 
         }else {
 
-            echo "We could not find a user with that email and password. Please try again later.";
+            $error = "We could not find a user with that email and password. Please try again later.";
         }
 
     }
