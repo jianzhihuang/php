@@ -72,8 +72,12 @@
 
 
         <div class="jumbotron heroImage text-center">
-            <textarea name="" class="form-control" id=""></textarea>
             
+        <div class="row">
+        
+        <textarea name="" class="form-control" id=""><?php echo $diary;?></textarea>
+            
+        </div>
         </div>
         <div class="container text-center my-5">
             <h1 class="display-4">優 點</h1>
