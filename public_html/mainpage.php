@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse"> 
                     <ul class="navbar-nav nav">
 
-                        <li class="mr-auto"><a href="">Log Out</a></li>
+                        <li class="mf-auto"><a href="">Log Out</a></li>
 
                     </ul>
         
