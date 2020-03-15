@@ -67,11 +67,10 @@
             <div class="input-group-prepend">
                     <span class="input-group-text">@</span>
                 </div>
-                <!-- <label for="email" class="text-light">Email Address</label> -->
                 <input type="email" name="email" placeholder="請輸入你的郵箱地址" class="form-control" value="<?php echo addslashes($_POST['email']);?>">
             </div>
-            <div class="form-group mr-auto">
-                <label class="text-light" for="password">Password</label>
+            <label class="text-light" for="password">Password</label>
+            <div class="input-group col-md-7 mx-auto">
                 <input type="password" name="password" placeholder="Password" class="form-control" value="<?php echo addslashes($_POST['password']);?>">
             </div>
             <div class="mt-3">
