@@ -80,7 +80,7 @@
             
         <div class="row">
         
-                <textarea class="form-control"><?php echo $diary;?>
+                <textarea class="form-control"><?php echo $diary; ?>
                 </textarea>
             
         </div>
