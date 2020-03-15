@@ -41,7 +41,7 @@
 
                 <a href="#" class="navbar-brand mr-auto">Sectret Diary</a>
 
-            <div class="navbar  navbar-expand-xl navbar-light bg-light">
+            <div>
                     <ul class="navbar-nav nav">
 
                         <li><a href="">Log Out</a></li>
