@@ -78,7 +78,7 @@
             <div class="pull-right">
                     <ul class="navbar-nav nav">
 
-                        <li><a href="">Log Out</a></li>
+                        <li><a href="index.php?logout=1">Log Out</a></li>
 
                     </ul>
         
