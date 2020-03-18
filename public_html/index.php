@@ -89,53 +89,6 @@
             </div>
             </form>
         </div>
-        <div class="container text-center my-5">
-            <h1 class="display-4">優 點</h1>
-            <p class="lead">為什麼這款軟體如此與眾不同</p>
-            <div class="row">
-                <div class="col" style="width: 18rem;">
-                    <div class="card">
-                        <img src="project/image/view.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">標 題</h5>
-                            <p class="card-text">這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,</p>
-                            <a href="#" class="btn btn-warning">了解更多</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="project/image/images.png" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">標 題</h5>
-                            <p class="card-text">這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,</p>
-                            <a href="#" class="btn btn-warning">了解更多</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card " style="width: 18rem;">
-                        <img src="project/image/3.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">標 題</h5>
-                            <p class="card-text">這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,這是一段關於軟體優點的描述,</p>
-                            <a href="#" class="btn btn-warning">了解更多</a>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="jumbotron text-center footer-height">
-            <h1 class="display-4">下載軟體</h1>
-            <p class="lead">聯繫方式:p0921442701@163.com</p>
-            <img src="project/image/App_Store_(black).png" id="appstoreImg">
-        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
