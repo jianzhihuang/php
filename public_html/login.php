@@ -8,7 +8,7 @@
         session_destroy();
 
         $message = "You have been logged out. Have a good day!";
-        
+
     };
 
 
@@ -52,9 +52,7 @@
                 
                 $_SESSION['id']=mysqli_insert_id($link);
 
-                print_r($_SESSION);
-
-                //Redirect to logged in page
+                header("Location:mainpage.php");
             }
 
 
@@ -71,9 +69,7 @@
 
             $_SESSION['id']=$row['id'];
             
-            print_r($_SESSION);
-
-            //Redirect to logged in page
+            header("Location:mainpage.php");
 
 
         }else {
