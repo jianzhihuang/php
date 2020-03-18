@@ -73,10 +73,7 @@
                     echo '<div class="alert alert-success">'.addslashes($message).'</div>';
 
                 }
-                if($Signup){
-
-                    echo '<div class="alert alert-success">'.addslashes($Signup).'</div>';
-                }
+          
             
             ?>
 

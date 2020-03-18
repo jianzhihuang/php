@@ -50,7 +50,7 @@
 
                 mysqli_query($link,$query);
 
-                $Signup = "You've been signed up!";
+                echo "You've been signed up!";
                 
                 $_SESSION['id']=mysqli_insert_id($link);
 
