@@ -3,6 +3,15 @@
 
     session_start();
 
+    if ($_GET["logout"]==1) {
+
+        session_destroy();
+
+        $message = "You have been logged out. Have a good day!";
+        
+    };
+
+
     include("connection.php");
 
     if ($_POST['submit']=="Sign Up"){
