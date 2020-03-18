@@ -70,7 +70,7 @@
 
                 if($message){
 
-                    echo '<div class="alert alert-danger">'.addslashes($message).'</div>';
+                    echo '<div class="alert alert-success">'.addslashes($message).'</div>';
 
                 }
             
