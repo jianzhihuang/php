@@ -10,4 +10,8 @@ class TodoController extends Controller
     {
         return view('index');
     }
+    public function update(Request $request)
+    {
+        return $request->all();
+    }
 }
