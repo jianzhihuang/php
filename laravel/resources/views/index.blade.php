@@ -1,5 +1,9 @@
 {{-- {{$todos}} --}}
-
+@error('title')
+<span class="invalid-feedback" role="alert">
+    <strong>{{ $message }}</strong>
+</span>
+@enderror
 @foreach ($todos as $todo)
 <p>{{$todo->id.".". $todo->title}}    
 <form method="POST" action="todo/{{$todo->id}}">

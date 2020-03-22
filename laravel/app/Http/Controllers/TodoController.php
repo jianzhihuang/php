@@ -21,17 +21,23 @@ class TodoController extends Controller
     }
     public function update(Request $request)
     {
+        $validated =$request->validate([
+
+            'title' => 'required|min:3'
+        ]);
+        
         // $todo = new Todo();
         // $todo->title = $request->title;
         // $todo->save();
 
-        return Todo::create($request->all());
+        return Todo::create($validated);
 
-        return redirect('todo');
+        return redirect('index');
     }
     public function destroy(Request $request, Todo $todo)
     {
-        return $todo;
+        $todo->delete();
+        return redirect('todo');
     }
 
 }
