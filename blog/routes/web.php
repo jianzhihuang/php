@@ -11,6 +11,8 @@
 |
 */
 
+// use Illuminate\Routing\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('form', function () {    
+    return view('form');
+});
+
+Route::post('add','cartController@add');
+
+Route::get('cart','cartController@cart' );
