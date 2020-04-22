@@ -1,7 +1,32 @@
 <?php
     session_start();
     include("connection.php");
+if(isset($_POST["addtocart"])){
+    $id=intval($_GET['id']);
+    if(isset($_SESSION["shoppingcart"])){
 
+        
+
+    }
+
+
+}else{
+
+    $item_array = array (
+
+        "item_id" => $_GET["id"],
+        "item_name" => $_POST["hidden_name"],
+        "item_price" => $_POST["hidden_price"],
+        "item_quantity" => $_POST["quantity"]
+
+
+
+
+    );
+    
+
+
+}
 
 ?>
 
@@ -31,9 +56,10 @@
     
 </head>
 <body>
-
+<a href="index.php?page=cart" class="btn btn-warning">前往購物車</a>
 <div class="container">
                 <h2 align= "center">Shopping Cart</h2>
+                
                 <?php
                 $sql = "SELECT * FROM `Cart` ORDER BY id ASC";
                 $result = mysqli_query($link,$sql);
@@ -45,19 +71,21 @@
 
                 ?>  
                 <div class="col-md-4" >
-                    <form action="index.php?=action=add&id=<?php echo $row["id"];?>">
+                    <form method="POST" action="index.php?=action=add&id=<?php echo $row["id"];?>">
                     <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center" >
-                    <img src="/public_html/test1/images/9.jpg" class="img-responsive" /><br />
-                    <h4 class="text-info"><?php echo $row["name"];?></h4>
+                    <img src="images/<?php echo $row["image"]; ?>"><br>
+                    <h4 class="text-info" ><?php echo $row["name"];?></h4>
                     <h4 class="text-danger">$ <?php echo $row["price"]; ?></h4>
-                    <input type="text">
-                    
-                    
+                    <input type="text" name="quantity" value="1" class="form-control" >
+                    <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>">
+                    <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>">
+                    <input type="submit" class="btn btn-success" name="addtocart"  value="加入購物車">
                     
                     
                     </div>
                     
                     </form> 
+                    
                 </div>
 
                 <?php      
