@@ -111,7 +111,7 @@
             $sql="SELECT * FROM Cart WHERE id IN(";
             foreach($_SESSION['cart'] as $id => $value){
             $sql.=$id.",";
-
+                
             }
             $sql = substr($sql,0,-1).") ORDER BY name ASC";
             

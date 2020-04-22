@@ -1,32 +1,25 @@
 <?php
     session_start();
     include("connection.php");
-if(isset($_POST["addtocart"])){
-    $id=intval($_GET['id']);
-    if(isset($_SESSION["shoppingcart"])){
+    if(isset($_POST["addtocart"]))
+    {
+        if(isset($_SESSION["shoppingcart"]))
+        {
 
-        
-
+    
+        }
+        else
+        {
+            $item_array = array(
+                'item_id'			=>	$_GET["id"],
+                'item_name'			=>	$_POST["hidden_name"],
+                'item_price'		=>	$_POST["hidden_price"],
+                'item_quantity'		=>	$_POST["quantity"]
+            );
+            $_SESSION["shoppingcart"][0] = $item_array;
+        }
     }
 
-
-}else{
-
-    $item_array = array (
-
-        "item_id" => $_GET["id"],
-        "item_name" => $_POST["hidden_name"],
-        "item_price" => $_POST["hidden_price"],
-        "item_quantity" => $_POST["quantity"]
-
-
-
-
-    );
-    
-
-
-}
 
 ?>
 
@@ -63,7 +56,7 @@ if(isset($_POST["addtocart"])){
                 <?php
                 $sql = "SELECT * FROM `Cart` ORDER BY id ASC";
                 $result = mysqli_query($link,$sql);
-                if(mysqli_num_rows($result))
+                if(mysqli_num_rows($result)>0)
                 {
                     while($row = mysqli_fetch_array($result))
                     {
